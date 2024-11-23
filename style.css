@@ -1,0 +1,293 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    font-size: normal;
+    outline: none;
+    color: #000;
+  }
+  header{
+    align-items: center;
+    padding: 20px 5px;
+    border-bottom: 1px solid rgba(80, 77, 77, 0.893);
+    min-height: 60px;
+    justify-content: space-between;
+    
+  }
+  header .left,
+  header .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+  
+  
+  }
+  .nav{
+    display: flex;
+    flex-direction: row;
+  }
+  .nav ul{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+  }
+  .nav ul li{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #000;
+    
+  }
+  
+  .nav ul li:hover{
+    color: rgb(232, 171, 181);
+  }
+  
+  .inputsearch{
+    background: #eae6e6;
+    padding: 5px 4px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputsearch input {
+    background: transparent;
+    border: none;
+    padding: 5px;
+    outline: none;
+    min-width: 350px;
+    width: 300%;
+    max-width: 700px;
+  
+  }
+  .btn {
+    background-color: rgb(15, 126, 238); /* Blue background */
+    border-bottom: #000; /* Remove borders */
+    color: rgb(23, 24, 27); /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 13px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: rgb(101, 135, 235);
+  }
+  a:link, a:visited {
+    color:black;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    gap: 2px;
+    font-size: large;
+    
+  }
+  
+  a:hover, a:active {
+    color: rgb(230, 111, 111);
+  }
+
+  .subnavigation{
+    display: flex;
+    padding: 0px 5px;
+    font-size: medium;
+    margin: 0%;
+    gap: 30px;
+  }
+  .subnavigation ul{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    margin: 0%;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 2fr 1fr 0.5fr;
+    column-gap: 20px;
+    padding-left: 100px;
+   }
+   
+   img {
+     max-width: 100%;
+     max-height:100%;
+   }
+   
+   .text {
+     font-size: 12px;
+     font-style: oblique;
+     
+     
+   }
+   .p{
+    font-size: xx-small;
+    font-weight: 10;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+   }
+
+  
+  
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  
+  .row {
+    margin: 30px 20px;
+  }
+
+  .myBtnContainer{
+    background-color: #abbaba;
+    border-radius: 2px;
+    border-style: double;
+    
+
+  }
+  
+  /* Style the buttons */
+  .btn1 {
+    border: double;
+    outline: #abbaba;
+    padding: 10px 20px;
+    background-color: white;
+    cursor: pointer;
+    background-color: gainsboro;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .btn1:hover {
+    background-color: #de6c6c;
+  }
+  
+  /* Add a dark background color to the active button */
+  .btn1.active {
+    background-color: #666;
+     color: white;
+  }
+
+
+
+ 
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+h4 {
+  font-size: 20px;
+  word-break: break-all;
+  font-style: bold;
+}
+.p{
+  font-size: 2px;
+  font-style: italic;
+}
+.row,
+.row > .column {
+  padding: 30px;
+}
+
+.column {
+  float: right;
+  width: 60%;
+   /* Hide columns by default */
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.show {
+  display: block;
+  border-left: 1px solid #000;
+}
+
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.column {
+    width: 30%;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #abbaba;
+    color: #000;
+  }
