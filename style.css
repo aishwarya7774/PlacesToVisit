@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    
+
   }
   
   body{
@@ -7,7 +9,8 @@
     padding: 0;
     font-size: normal;
     outline: none;
-    color: #000;
+    color: #0a0606;
+   
   }
   header{
     align-items: center;
@@ -23,6 +26,7 @@
     flex-direction: row;
     align-items: center;
     gap: 100px;
+    
   
   
   }
@@ -37,7 +41,7 @@
     gap: 50px;
   }
   .nav ul li{
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 700;
     cursor: pointer;
     color: #000;
@@ -64,6 +68,77 @@
     width: 300%;
     max-width: 700px;
   
+  }
+  
+  body {
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide columns by default */
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background color to the active button */
+  .btn.active {
+    background-color: #666;
+     color: white;
   }
   .btn {
     background-color: rgb(15, 126, 238); /* Blue background */
@@ -156,8 +231,8 @@
     background-color: #abbaba;
     border-radius: 2px;
     border-style: double;
-    
-
+    display: grid;
+   
   }
   
   /* Style the buttons */
@@ -167,6 +242,7 @@
     padding: 10px 20px;
     background-color: white;
     cursor: pointer;
+
     background-color: gainsboro;
   }
   
@@ -180,10 +256,6 @@
     background-color: #666;
      color: white;
   }
-
-
-
- 
 
 /* Slideshow container */
 .slideshow-container {
@@ -210,52 +282,6 @@ h4 {
   padding: 30px;
 }
 
-.column {
-  float: right;
-  width: 60%;
-   /* Hide columns by default */
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.show {
-  display: block;
-  border-left: 1px solid #000;
-}
-
-
-
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: 20px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a grey background color */
-.prev:hover, .next:hover {
-  background-color: white;
-  color: black;
-}
-
 
 
   footer {
@@ -277,7 +303,7 @@ p {
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: georgian;
     padding: 0;
 }
 
